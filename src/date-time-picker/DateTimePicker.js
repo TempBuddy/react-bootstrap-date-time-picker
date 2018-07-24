@@ -1,5 +1,6 @@
 
 import React from 'react';
+import PropTypes from 'prop-types'; // ES6
 import ReactDOM from 'react-dom';
 import {
   Button,
@@ -413,40 +414,40 @@ class DateTimePicker extends React.Component {
 }
 
 DateTimePicker.propTypes = {
-  defaultValue: React.PropTypes.string,
-  value: React.PropTypes.string,
-  className: React.PropTypes.string,
-  style: React.PropTypes.object,
-  cellPadding: React.PropTypes.string,
-  placeholder: React.PropTypes.string,
-  dayLabels: React.PropTypes.array,
-  monthLabels: React.PropTypes.array,
-  onChange: React.PropTypes.func,
-  onClear: React.PropTypes.func,
-  onBlur: React.PropTypes.func,
-  onFocus: React.PropTypes.func,
-  autoFocus: React.PropTypes.bool,
-  disabled: React.PropTypes.bool,
-  weekStartsOnMonday: React.PropTypes.bool,
-  clearButtonElement: React.PropTypes.oneOfType([
-    React.PropTypes.string,
-    React.PropTypes.object
+  defaultValue: PropTypes.string,
+  value: PropTypes.string,
+  className: PropTypes.string,
+  style: PropTypes.object,
+  cellPadding: PropTypes.string,
+  placeholder: PropTypes.string,
+  dayLabels: PropTypes.array,
+  monthLabels: PropTypes.array,
+  onChange: PropTypes.func,
+  onClear: PropTypes.func,
+  onBlur: PropTypes.func,
+  onFocus: PropTypes.func,
+  autoFocus: PropTypes.bool,
+  disabled: PropTypes.bool,
+  weekStartsOnMonday: PropTypes.bool,
+  clearButtonElement: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.object
   ]),
-  showClearButton: React.PropTypes.bool,
-  calendarPlacement: React.PropTypes.string,
-  dateFormat: React.PropTypes.string, // 'MM/DD/YYYY', 'DD/MM/YYYY', 'YYYY/MM/DD', 'DD-MM-YYYY'
-  bsClass: React.PropTypes.string,
-  bsSize: React.PropTypes.string,
-  calendarContainer: React.PropTypes.object,
-  id: React.PropTypes.string,
-  name: React.PropTypes.string,
-  showTodayButton: React.PropTypes.bool,
-  todayButtonLabel: React.PropTypes.string,
-  customControl: React.PropTypes.object,
-  from: React.PropTypes.object,
-  to: React.PropTypes.object,
-  calendarOnly: React.PropTypes.bool,
-  timeOnly: React.PropTypes.bool
+  showClearButton: PropTypes.bool,
+  calendarPlacement: PropTypes.string,
+  dateFormat: PropTypes.string, // 'MM/DD/YYYY', 'DD/MM/YYYY', 'YYYY/MM/DD', 'DD-MM-YYYY'
+  bsClass: PropTypes.string,
+  bsSize: PropTypes.string,
+  calendarContainer: PropTypes.object,
+  id: PropTypes.string,
+  name: PropTypes.string,
+  showTodayButton: PropTypes.bool,
+  todayButtonLabel: PropTypes.string,
+  customControl: PropTypes.object,
+  from: PropTypes.object,
+  to: PropTypes.object,
+  calendarOnly: PropTypes.bool,
+  timeOnly: PropTypes.bool
 }
 
 DateTimePicker.defaultProps = {

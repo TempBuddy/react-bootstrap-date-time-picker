@@ -28,6 +28,10 @@ loaders.push({
 	]
 });
 
+loaders.push({
+	 test: /\.(png|woff|woff2|eot|ttf|svg)$/, loader: 'url-loader?limit=100000' 
+});
+
 // local css modules
 loaders.push({
 	test: /\.css$/,

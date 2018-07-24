@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types'; // ES6
 import ReactDOM from 'react-dom';
 import {
   Button,
@@ -84,12 +85,12 @@ class CalendarHeader extends React.Component {
 }
 
 CalendarHeader.propTypes = {
-  displayDate: React.PropTypes.object.isRequired,
-  onChange: React.PropTypes.func.isRequired,
-  monthLabels: React.PropTypes.array.isRequired,
-  years: React.PropTypes.array,
-  from: React.PropTypes.object,
-  to: React.PropTypes.object
+  displayDate: PropTypes.object.isRequired,
+  onChange: PropTypes.func.isRequired,
+  monthLabels: PropTypes.array.isRequired,
+  years: PropTypes.array,
+  from: PropTypes.object,
+  to: PropTypes.object
 }
 
 CalendarHeader.defaultProps = {

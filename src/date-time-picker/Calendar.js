@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types'; // ES6
 import ReactDOM from 'react-dom';
 import {
   Button,
@@ -126,16 +127,16 @@ class Calendar extends React.Component {
 }
 
 Calendar.propTypes = {
-    selectedDate: React.PropTypes.object,
-    displayDate: React.PropTypes.object.isRequired,
-    onChange: React.PropTypes.func.isRequired,
-    dayLabels: React.PropTypes.array.isRequired,
-    cellPadding: React.PropTypes.string.isRequired,
-    weekStartsOnMonday: React.PropTypes.bool,
-    showTodayButton: React.PropTypes.bool,
-    todayButtonLabel: React.PropTypes.string,
-    fromDay: React.PropTypes.object,
-    toDay: React.PropTypes.object
+    selectedDate: PropTypes.object,
+    displayDate: PropTypes.object.isRequired,
+    onChange: PropTypes.func.isRequired,
+    dayLabels: PropTypes.array.isRequired,
+    cellPadding: PropTypes.string.isRequired,
+    weekStartsOnMonday: PropTypes.bool,
+    showTodayButton: PropTypes.bool,
+    todayButtonLabel: PropTypes.string,
+    fromDay: PropTypes.object,
+    toDay: PropTypes.object
 }
 
 export default Calendar;

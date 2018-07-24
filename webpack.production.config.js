@@ -24,6 +24,9 @@ loaders.push({
 	test: /[\/\\](node_modules|global)[\/\\].*\.css$/,
 	loader: ExtractTextPlugin.extract('style', 'css')
 });
+loaders.push({
+	test: /\.(png|woff|woff2|eot|ttf|svg)$/, loader: 'url-loader?limit=100000' 
+});
 
 module.exports = {
 	entry: [

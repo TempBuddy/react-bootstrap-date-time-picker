@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types'; // ES6
 import ReactDOM from 'react-dom';
 import {
   Button,
@@ -189,21 +190,21 @@ class CalendarFooter extends React.Component {
 }
 
 CalendarFooter.propTypes = {
-  displayDate: React.PropTypes.object.isRequired,
-  onChange: React.PropTypes.func.isRequired,
-  years: React.PropTypes.array,
-  hours: React.PropTypes.array,
-  minutes: React.PropTypes.array,
-  seconds: React.PropTypes.array,
-  isSecVisible : React.PropTypes.bool,
-  isHrVisible : React.PropTypes.bool,
-  isMinVisible : React.PropTypes.bool,
-  from: React.PropTypes.object,
-  to: React.PropTypes.object,
-  selectedDate: React.PropTypes.object,
-  onApply: React.PropTypes.func,
-  onCancel: React.PropTypes.func,
-  timeOnly: React.PropTypes.bool
+  displayDate: PropTypes.object.isRequired,
+  onChange: PropTypes.func.isRequired,
+  years: PropTypes.array,
+  hours: PropTypes.array,
+  minutes: PropTypes.array,
+  seconds: PropTypes.array,
+  isSecVisible : PropTypes.bool,
+  isHrVisible : PropTypes.bool,
+  isMinVisible : PropTypes.bool,
+  from: PropTypes.object,
+  to: PropTypes.object,
+  selectedDate: PropTypes.object,
+  onApply: PropTypes.func,
+  onCancel: PropTypes.func,
+  timeOnly: PropTypes.bool
 }
 
 CalendarFooter.defaultProps = {
